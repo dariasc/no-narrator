@@ -1,9 +1,5 @@
-# Fabric Example Mod
+# !narrator
 
-## Setup
+A small mod that disables the **ctrl** + **b** narrator keybind (I hit it way to often...).
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+It achieves this through a mixin in the `net.minecraft.client.Keyboard` class, stopping any call to `GameOptions.cycle()` inside the `Keyboard.onKey()` method.
