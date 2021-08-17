@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "no-narrator",
+  "version": "${version}",
+
+  "name": "!narrator",
+  "description": "This mod disables the ctrl+b narrator shortcut",
+  "authors": [
+    "dariasc"
+  ],
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.dariasc.nonarrator.NoNarrator"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "minecraft": "1.16.1",
+    "java": ">=8"
+  }
+}
